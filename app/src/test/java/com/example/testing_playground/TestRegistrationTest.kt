@@ -52,5 +52,25 @@ class TestRegistrationTest {
     }
 
 
+    @Test
+    fun `password and repeatPassword don't match returns false`(){
+        val testResult = TestRegistration.checkRegistrationInput(
+            "",
+            "123456",
+            "100"
+        )
+        assertThat(testResult).isFalse()
+    }
+
+    @Test
+    fun `password is not empty returns false`(){
+        val testResult = TestRegistration.checkRegistrationInput(
+            "Ebba",
+            "",
+            ""
+        )
+        assertThat(testResult).isFalse()
+    }
+
 
 }

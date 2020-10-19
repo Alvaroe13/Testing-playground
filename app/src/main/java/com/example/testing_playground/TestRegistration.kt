@@ -18,6 +18,18 @@ object TestRegistration  {
         password: String,
         checkPassword: String
     ) :Boolean {
+        if (username.isEmpty() || password.isEmpty()){
+            return false
+        }
+        if (password != checkPassword){
+            return false
+        }
+        if (password.length < 5){
+            return false
+        }
+        if (username in usernameAlreadyTaken){
+            return false
+        }
         return true
     }
 }
