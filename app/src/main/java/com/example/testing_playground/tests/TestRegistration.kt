@@ -1,4 +1,4 @@
-package com.example.testing_playground
+package com.example.testing_playground.tests
 
 object TestRegistration  {
 

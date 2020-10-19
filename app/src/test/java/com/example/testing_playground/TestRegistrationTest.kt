@@ -1,5 +1,6 @@
 package com.example.testing_playground
 
+import com.example.testing_playground.tests.TestRegistration
 import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
