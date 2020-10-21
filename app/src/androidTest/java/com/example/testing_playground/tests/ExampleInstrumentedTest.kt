@@ -1,4 +1,4 @@
-package com.example.testing_playground
+package com.example.testing_playground.tests
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
